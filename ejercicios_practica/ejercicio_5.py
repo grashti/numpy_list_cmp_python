@@ -30,6 +30,11 @@ if __name__ == '__main__':
 
     # personal_1_10 = [.....]
 
+    personal_1_10 = [ x  for x in accesos if x >=1 and x<=10 ]
+
+    print(personal_1_10, 'ingresaron por el molinete ',len(personal_1_10),' personas')
+    
+
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
     # cuyo ID de personal esté dentro de los ID válidos para ingresar
@@ -42,4 +47,9 @@ if __name__ == '__main__':
 
     # personal_valido = [.....]
 
+    personal_valido = [ x for x in accesos if x in id_validos ]
+
+    print(personal_valido)
+
+    
     print("terminamos")
